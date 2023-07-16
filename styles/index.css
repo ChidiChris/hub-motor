@@ -1,20 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-.account{
-    display: inline-flex;
-align-items: center;
-gap: 342px;
+#slider {
+    overflow: hidden;
 }
 
-.auth{
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+
+}
+
+.account {
+    display: inline-flex;
+    align-items: center;
+    gap: 342px;
+}
+
+.auth {
     display: inline-flex;
     align-items: center;
 }
@@ -29,45 +84,45 @@ gap: 342px;
     margin: 20px;
     align-self: center;
     display: flex;
-min-width: 356px;
-min-height: 46px;
-justify-content: center;
-align-items: center;
-gap: 20px;
+    min-width: 356px;
+    min-height: 46px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.container{
-width: 100%;
-background-position: center;
-background-size: cover;
+.container {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
-.account img{
+.account img {
     width: 118px;
-height: 48px;
+    height: 48px;
 }
 
-#user{
+#user {
     width: 19.2px;
     height: 24px;
 }
 
-.row{
+.row {
     width: 100%;
     height: 56px;
     padding: 0px 276px;
     background: var(--blue-900, #004475);
 }
 
-.navbar{
+.navbar {
     display: inline-flex;
-justify-content: center;
-align-items: center;
-position: relative;
-z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     height: 56px;
     padding: 10px 16px;
@@ -77,11 +132,11 @@ z-index: 1;
     box-sizing: border-box;
 }
 
-.navbar ul li{
+.navbar ul li {
     list-style: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     padding: 10px 16px;
     font-family: Raleway;
     font-size: 16px;
@@ -89,22 +144,29 @@ z-index: 1;
     text-decoration: none;
 }
 
-.hero{
-    margin-top: 44px;
-    width: 100%;
-min-height: 100vh;
-background: linear-gradient(1deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-background-image: url("C:\Users\pc\Desktop\MotoHub\hub-motor\images");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+.home {
+    background-color: #FC8745;
+    box-sizing: inherit;
+    display: flex;
+    height: 56px;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
-.hero_text{
+.hero {
+    margin-top: 32px;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.hero_text {
     width: 100%;
     min-height: 100vh;
     position: absolute;
-    top: 0;
+    top: 165px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -112,17 +174,47 @@ background-size: cover;
     flex-direction: column;
 }
 
-.explore h1{
-    color: #252525;
-font-family: Raleway;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-align: center;
+.hero_text h1 {
+    color: #F9F9F9;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.82);
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: center;
 }
 
-.explore ul{
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit {
+    padding: 10px 30px;
+    border-radius: 37px;
+    background-color: #FC6F20;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.explore h1 {
+    color: #252525;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.explore ul {
     display: flex;
     height: 56px;
     padding: 10px 16px;
@@ -131,21 +223,173 @@ text-align: center;
     gap: 10px;
 }
 
-.explore ul li{
+.explore ul li {
     list-style: none;
 }
 
-.explore ul li a{
+.explore ul li a {
     padding: 10px 16px;
     color: var(--gray-400, #58646C);
-font-family: Raleway;
-font-size: 24px;
-font-style: normal;
-/* font-weight: 400; */
-line-height: normal;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: normal;
     text-decoration: none;
 }
 
-.rect1{
+.hotdeals_images {
+    width: 617px;
+    height: 358px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 5px;
+}
+
+
+.description {
+    width: 205;
+    height: 358;
+    border-radius: 0px 21px 21px 0px;
+    background: var(--blue-900, #004475);
+    align-items: center;
+    justify-items: center;
+}
+
+.description p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description h6 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.scroll {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.scroll img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.scroll p {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.shopping_tool h1 {
+    color: #252525;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.shopping_tool_items {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 171px;
+    flex-shrink: 0;
     background-color: #004475;
+}
+
+.discover h1 {
+    color: #252525;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.discover ul {
+    display: flex;
+    height: 56px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.discover ul li {
+    list-style: none;
+}
+
+.discover ul li a {
+    padding: 10px 16px;
+    color: var(--gray-400, #58646C);
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: normal;
+    text-decoration: none;
+}
+
+.lets_go {
+    width: 1152px;
+    height: 491px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    display: inline-flex;
+    height: 491px;
+    padding: 165px 84px 165px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #1F2022;
+}
+
+.desc p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.desc h6 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
