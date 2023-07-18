@@ -76,7 +76,7 @@
 
 .box {
     width: 484px;
-    height: 56px;
+    height: 40px;
     border-radius: 37px;
     border: 1px solid #FC8745;
     background: #FFF;
@@ -176,7 +176,6 @@
 
 .hero_text h1 {
     color: #F9F9F9;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.82);
     font-family: Raleway;
     font-size: 48px;
     font-style: normal;
@@ -185,21 +184,16 @@
     align-self: center;
 }
 
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #submit {
     padding: 10px 30px;
     border-radius: 37px;
     background-color: #FC6F20;
     color: white;
     font-size: 16px;
-    height: 40px;
+    height: 36px;
     justify-content: center;
     align-items: center;
+    border: none;
 
 }
 
@@ -244,18 +238,24 @@
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 40px;
     padding: 5px;
+    margin-left: 15%;
+}
+
+#img2{
+    margin-left: 50px;
 }
 
 
 .description {
-    width: 205;
+    width: 205px;
     height: 358;
     border-radius: 0px 21px 21px 0px;
     background: var(--blue-900, #004475);
     align-items: center;
     justify-items: center;
+    padding: 20px;
 }
 
 .description p {
@@ -300,7 +300,7 @@
     line-height: normal;
 }
 
-.shopping_tool h1 {
+.shopping h1 {
     color: #252525;
     font-family: Raleway;
     font-size: 48px;
@@ -308,20 +308,107 @@
     font-weight: 600;
     line-height: normal;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
-.shopping_tool_items {
+.shopping_items{
     display: inline-flex;
+    align-items: center;
+    background: var(--blue-900, #004475);
+    width: 100%;
+    height: 170px;
+    
+}
+
+.shopping_items img{
+    width: 3px;
+height: 150px;
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+}
+
+#search_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+padding: 280px 280px;
+
+}
+
+#search_item img{
+    width: 50px;
+height: 50px;
+}
+
+#search_item p{
+    color: #FFF;
+font-family: Raleway;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#find_dealer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+padding: 257px 257px;
+}
+
+#find_dealer img{
+    width: 75px;
+height: 53px;
+}
+
+#find_dealer p{
+    color: #FFF;
+font-family: Raleway;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#items figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+}
+
+#items figure img {
+    float: left;
+    width: 20%;
+}
+
+
+.discover_text {
+    width: 100%;
+    position: absolute;
+    top: 310%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 171px;
-    flex-shrink: 0;
-    background-color: #004475;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
+.button{
+    margin-top: 10px;
+}
+
 
 .discover h1 {
     color: #252525;
@@ -358,11 +445,15 @@
 }
 
 .lets_go {
-    width: 1152px;
+    width: 100%;
     height: 491px;
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.lets_go img{
+    width: 100%;
 }
 
 .desc {
@@ -392,4 +483,68 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.newsletter{
+width: 100%;
+height: 325px;
+flex-shrink: 0;
+background: rgba(85, 172, 238, 0.20);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#signup_text{
+    color: var(--gray-1000, #0B0E10);
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#email_signup{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    display: flex;
+}
+
+#submit1{
+    padding: 10px 30px;
+    border-radius: 37px;
+    background-color: #FC6F20;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+#signup_text p{
+    color: var(--gray-400, #58646C);
+font-family: Raleway;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+#signup_text h6{    
+color: var(--gray-1000, #0B0E10);
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
