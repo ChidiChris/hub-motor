@@ -17,9 +17,10 @@
 
     <div class="auth">
       <img id="user" src="images/user_image.jpg">
-      <p>Account <br>
-        Sign up/Sign in
-      </p>
+      <div class="txt">
+      <h6 id="auth_sign">Account</h6>
+       <p> Sign up/Sign in</p>
+      </div>
     </div>
   </div>
 
@@ -166,16 +167,16 @@
   <div class="discover_possibilities">
 
     <div id="items">
-    <figure>
-      <img src="images/discover_img.jpg">
-    </figure>
-  </div>
-  <div class="discover_text">
-    <h1>Discover the <br> possibilities</h1>
-    <form class="button">
-    <input type="submit" value="See what we're about" id="submit">
-  </form>
-  </div>
+      <figure>
+        <img src="images/discover_img.jpg">
+      </figure>
+    </div>
+    <div class="discover_text">
+      <h1>Discover the <br> possibilities</h1>
+      <form class="button">
+        <input type="submit" value="See what we're about" id="submit">
+      </form>
+    </div>
   </div>
 
   <div class="discover">
@@ -189,8 +190,10 @@
     </nav>
   </div>
 
+  <h1 id="let_text">LET'S GO PLACES</h1>
   <div class="lets_go">
     <img src="images/letsgo_img.jpg">
+    
     <div class="desc">
       <h6>Customer Reviews
         </p>
@@ -203,23 +206,68 @@
     </div>
   </div>
 
+</div>
+
   <div class="newsletter">
     <div id="signup_text">
-      <h>Sign up for our newsletter</h6>
-      <p>Be the first to know about new releases, company news and insights.</p>
+      <h6>Sign up for our newsletter</h6>
+        <p>Be the first to know about new releases, company news and insights.</p>
+       
       </div>
-      <div id="email_signup">
-      <input type="text" placeholder="Enter your email" name="email" required class="box">
-      <input type="submit" value="Subscribe" id="submit1">
+    <div id="email_signup">
+      <input type="text" placeholder="Enter your email" name="email" required class="box1">
+        <input type="submit" value="Subscribe" id="submit1">
+      <div id="email_text">
+        <p>We care about your data in our <a href="#" style="color:dodgerblue">privacy policy</a>.</p>
+
       </div>
-      <div id="text">
-      <p>We care about your data in our <a href="#" style="color:dodgerblue">privacy policy</a>.</p>
-      </div>
-    </div>
     </div>
   </div>
-  <footer>
 
+  <footer class="footer">
+    <!-- <div id="footer_img">
+      <img src="images/footer_logo.png">
+    </div> -->
+    <div class="footer_content">
+    <h4>© 2023 MotorHub Inc.</h4>
+    <img  src="images/footer_line.png">
+    </div>
+      <div class="footer_container">
+        <div class="footer_row">
+          <div class="footer-col">
+            
+            <ul>
+              <li><a href="#ABOUTUS">About Us</a></li>
+              <li><a href="#CONTACTUS">Contact Us</a></li>
+              <li><a href="#CAREER">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4></h4>
+            <ul>
+              <li><a href="#FAQS">FAQS</a></li>
+              <li><a href="#NEWSLETTER">Newsletter Signup</a></li>
+              <li><a href="#CUSTOMERSREVIEW">Customers Review</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4></h4>
+            <ul>
+              <li><a href="#BOOKCONSULTANT">Filter Products</a></li>
+              <li><a href="#FINDADEALER">Build</a></li>
+              <li><a href="#SEARCHINVENTORY">Order a Car</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4></h4>
+            <ul>
+              <li><a href="#BOOKCONSULTANT">Book a Consultant</a></li>
+              <li><a href="#FINDADEALER">Find a Dealer</a></li>
+              <li><a href="#SEARCHINVENTORY">Search Inventory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
   </footer>
 </body>
 
